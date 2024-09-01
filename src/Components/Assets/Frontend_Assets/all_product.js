@@ -19,6 +19,7 @@ import p18_img from "./tshirt18.jpeg";
 import p19_img from "./tshirt19.jpeg";
 import p20_img from "./tshirt20.jpeg";
 import p21_img from "./tshirt21.jpeg";
+import p22_img from "./tshirt22.jpeg";
 
 let all_product = [
   {
