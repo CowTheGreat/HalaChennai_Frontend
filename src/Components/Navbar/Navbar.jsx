@@ -46,8 +46,15 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
-        <img src={cart_icon} alt="" />
+        <button>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            Login
+          </Link>
+        </button>
+        <Link to="/cart" style={{ textDecoration: "none" }}>
+          <img src={cart_icon} alt="" />
+        </Link>
+
         <div className="nav-cart-count">0</div>
       </div>
     </div>
