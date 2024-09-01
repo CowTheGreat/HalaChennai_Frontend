@@ -1,11 +1,11 @@
-import p1_img from "./product_12.png";
-import p2_img from "./product_35.png";
-import p3_img from "./product_14.png";
-import p4_img from "./product_8.png";
-import p5_img from "./product_15.png";
-import p6_img from "./product_2.png";
-import p7_img from "./product_17.png";
-import p8_img from "./product_28.png";
+import p1_img from "./tshirt12.jpeg";
+import p2_img from "./tshirt13.jpeg";
+import p3_img from "./tshirt14.jpeg";
+import p4_img from "./tshirt8.jpeg";
+import p5_img from "./tshirt15.jpeg";
+import p6_img from "./tshirt2.jpeg";
+import p7_img from "./tshirt17.jpeg";
+import p8_img from "./tshirt21.jpeg";
 
 let new_collections = [
   {
