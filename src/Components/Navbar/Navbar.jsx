@@ -3,9 +3,20 @@ import "./Navbar.css";
 import logo from "../Assets/Custom/logo.png";
 import cart_icon from "../Assets/Frontend_Assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../Context/ShopContext";
+import { useContext } from "react";
+import { useRef } from "react";
+import nav_dropdown from "../Assets//Custom/dropdown.jpg";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const { getTotalCartItems } = useContext(ShopContext);
+  const menuRef = useRef();
+
+  const dropdown_toggle = (e) => {
+    menuRef.current.classList.toggle("nav-menu-visible");
+    e.target.classList.toggle("open");
+  };
 
   return (
     <div className="navbar">
@@ -13,7 +24,13 @@ export const Navbar = () => {
         <img src={logo} alt="" />
         {/* <p>SHOPPER</p> */}
       </div>
-      <ul className="nav-menu">
+      <img
+        className="nav-dropdown"
+        onClick={dropdown_toggle}
+        src={nav_dropdown}
+        alt=""
+      />
+      <ul ref={menuRef} className="nav-menu">
         <li
           onClick={() => {
             setMenu("home");
@@ -55,7 +72,7 @@ export const Navbar = () => {
           <img src={cart_icon} alt="" />
         </Link>
 
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );
