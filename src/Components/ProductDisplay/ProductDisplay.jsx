@@ -269,7 +269,7 @@ const ProductDisplay = (props) => {
               value={customizationInput}
               onChange={(e) => setCustomizationInput(e.target.value)}
             />
-            <p>₹250.00</p>
+            <p>₹300.00</p>
           </div>
 
           {/* Add to Cart Button */}

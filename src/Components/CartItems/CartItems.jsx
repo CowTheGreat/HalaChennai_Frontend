@@ -84,7 +84,7 @@ const CartItems = () => {
   // Function to calculate the total amount for a product, including customization if applicable
   const calculateProductTotal = (e) => {
     const baseTotal = e.new_price * cartItems[e.id].quantity;
-    const customizationCharge = cartItems[e.id].customization ? 250 : 0;
+    const customizationCharge = cartItems[e.id].customization ? 300 : 0;
     return baseTotal + customizationCharge;
   };
 

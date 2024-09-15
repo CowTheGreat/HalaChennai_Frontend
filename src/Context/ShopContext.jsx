@@ -114,7 +114,7 @@ const ShopContextProvider = (props) => {
           (product) => product.id === Number(item)
         );
         const basePrice = itemInfo.new_price * cartItems[item].quantity;
-        const customizationCharge = cartItems[item].customization ? 250 : 0;
+        const customizationCharge = cartItems[item].customization ? 300 : 0;
         totalAmount += basePrice + customizationCharge; // Add customization fee if exists
       }
     }
